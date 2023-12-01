@@ -3,9 +3,12 @@
 class Tire {
 
     public function __construct(
-        public $size,
-        public $type,
-        private $quality) {
+        $size,
+        $type,
+        $quality) {
+            $this->size=$size;
+            $this->type=$type;
+            $this->qualit=$quality;
        }
     
        public function __destruct() {
