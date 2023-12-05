@@ -3,8 +3,16 @@
 include "Car.php";
 include "Tire.php";
 include "Train.php";
-$car1 = new Car("Audi", 12);
+include "Cat.php";
+include "Dog.php";
+
+$cat1 = new Cat("Mincis", 2);
+$cat2 = new Cat("Brincis", 3);
+$dog1 = new Dog("Reksis", 6);
+Dog::payAttention();
 /*
+$car1 = new Car("Audi", 12);
+$train1 = new Train("Skoda", 1435, 540986740987609867509);
 $car2 = new Car("Feraro", 2);
 $car1->increaseMileage(240);
 

@@ -3,14 +3,16 @@
 include_once "Vehicle.php";
 
 class Train extends Vehicle{
-    public $trackGuage;
+    public $trackGauge;
+
+
+
     public function __construct(   
         $brand,
         $mileage,
-        $trackGuage) {
-            $this->brand=$brand;
-            $this->mileage=$mileage;
-            $this->trackGuage=$trackGuage;
+        $trackGauge) {
+            parent::__construct($brand, $mileage);
+            $this->trackGuage=$trackGauge;
         }
    
        static function makeNoise() {
