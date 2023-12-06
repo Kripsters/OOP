@@ -3,7 +3,7 @@
 class Math {
 
     static function addTwo($x, $y) {
-        echo "<br>" . $x+$y;
+        return "<br>" . $x+$y;
     }
 
     static function factorial($x) {
@@ -12,38 +12,35 @@ class Math {
         for ($i=$y; $i>=1; $i--) {
             $x=$x*$i;
         }
-        echo "<br>" . $x;
+        return "<br>" . $x;
     }
 
     static function sum($x) {
-        echo "<br>";
         $sum=0;
         foreach ($x as $y) {
             $sum = $sum+$y;
         }
-        echo $sum;
+        return "<br>" . $sum;
     }
 
     static function average($x) {
-        echo "<br>";
         $sum=0;
         $count=0;
         foreach ($x as $y) {
             $sum = $sum+$y;
             $count++;
         }
-        echo $sum/$count;
+        return "<br>" . $sum/$count;
     }
 
     
     static function max($x) {
-        echo "<br>";
         $max=0;
         foreach ($x as $y) {
             if ($y>$max) {
                 $max=$y;
             }
         }
-        echo $max;
+        return "<br>" . $max;
     }
 }

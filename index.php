@@ -11,11 +11,11 @@ $cat1 = new Cat("Mincis", 2);
 $cat2 = new Cat("Brincis", 3);
 $dog1 = new Dog("Reksis", 6);
 Dog::payAttention();
-Math::addTwo(4,9);
-Math::factorial(10);
-Math::sum([75,25]);
-Math::average([75,25]);
-Math::max([75,25]);
+echo Math::addTwo(4,9);
+echo Math::factorial(10);
+echo Math::sum([75,25]);
+echo Math::average([75,25]);
+echo Math::max([75,25]);
 /*
 $car1 = new Car("Audi", 12);
 $train1 = new Train("Skoda", 1435, 540986740987609867509);
